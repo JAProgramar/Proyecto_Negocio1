@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Negocio1
 {
-    partial class Form1
+    partial class MenuPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnVerProductos = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnVerProductos
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(11, 346);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "VER PRODUCTOS\r\n\r\n\r\n";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnVerProductos.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btnVerProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnVerProductos.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerProductos.Location = new System.Drawing.Point(26, 328);
+            this.btnVerProductos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerProductos.Name = "btnVerProductos";
+            this.btnVerProductos.Size = new System.Drawing.Size(190, 32);
+            this.btnVerProductos.TabIndex = 1;
+            this.btnVerProductos.Text = "VER PRODUCTOS\r\n\r\n\r\n";
+            this.btnVerProductos.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -73,6 +73,16 @@
             this.panel1.Size = new System.Drawing.Size(691, 67);
             this.panel1.TabIndex = 3;
             // 
+            // panel2
+            // 
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.BackgroundImage = global::Proyecto_Negocio1.Properties.Resources.images;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(472, -53);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(160, 163);
+            this.panel2.TabIndex = 4;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -85,25 +95,15 @@
             this.label5.Size = new System.Drawing.Size(0, 35);
             this.label5.TabIndex = 5;
             // 
-            // panel2
-            // 
-            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.BackgroundImage = global::Proyecto_Negocio1.Properties.Resources.images;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(472, -53);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(160, 163);
-            this.panel2.TabIndex = 4;
-            // 
-            // Form1
+            // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(685, 389);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnVerProductos);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "MenuPrincipal";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -113,7 +113,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnVerProductos;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
