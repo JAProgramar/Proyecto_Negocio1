@@ -39,12 +39,14 @@
             // btnVerProductos
             // 
             this.btnVerProductos.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btnVerProductos.FlatAppearance.BorderSize = 0;
             this.btnVerProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnVerProductos.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerProductos.Location = new System.Drawing.Point(26, 328);
+            this.btnVerProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerProductos.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerProductos.Location = new System.Drawing.Point(11, 350);
             this.btnVerProductos.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerProductos.Name = "btnVerProductos";
-            this.btnVerProductos.Size = new System.Drawing.Size(190, 32);
+            this.btnVerProductos.Size = new System.Drawing.Size(150, 28);
             this.btnVerProductos.TabIndex = 1;
             this.btnVerProductos.Text = "VER PRODUCTOS\r\n\r\n\r\n";
             this.btnVerProductos.UseVisualStyleBackColor = true;
@@ -53,12 +55,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("PMingLiU-ExtB", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(11, 20);
+            this.label3.Location = new System.Drawing.Point(11, 11);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(229, 35);
+            this.label3.Size = new System.Drawing.Size(235, 47);
             this.label3.TabIndex = 2;
             this.label3.Text = "INVENTARIO\r\n";
             // 
@@ -78,10 +80,11 @@
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackgroundImage = global::Proyecto_Negocio1.Properties.Resources.images;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(472, -53);
+            this.panel2.Location = new System.Drawing.Point(482, -53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(160, 163);
+            this.panel2.Size = new System.Drawing.Size(162, 165);
             this.panel2.TabIndex = 4;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label5
             // 
